@@ -4,10 +4,19 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Google Gemini fetch</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <script type="module" src="./src/main.js"></script>
   </head>
   <body>
     <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+    <form>
+      <label>PROMPT</label>
+      <input name="prompt" type="text" placeholder="Enter your prompt here" />
+      <button>GO!</button>
+      <div id="responses">
+        <h2>Response</h2>
+        <p id="response"></p>
+    </form>
   </body>
 </html>
